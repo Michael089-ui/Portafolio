@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Michael Corrales</title>
+    <!-- Bootstrap CSS desde CDN alternativo -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        section { padding: 60px 0; }
+        section h2 { margin-bottom: 30px; color: #343a40; }
+        footer { margin-top: 60px; }
+        .icon-list li { display: flex; align-items: center; }
+        .icon-list li i { margin-right: 10px; color: #007bff; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="fas fa-code"></i> Michael Corrales</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos"><i class="fas fa-folder"></i> Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades"><i class="fas fa-tools"></i> Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sobre mí -->
+<section id="sobre-mi" class="container">
+  <h2><i class="fas fa-user"></i> Sobre mí</h2>
+  <p>Soy un desarrollador enfocado en generar soluciones eficientes y escalables mediante el uso de tecnologías web modernas. Mi objetivo es ayudarte a transformar ideas en productos funcionales, optimizando procesos a través del desarrollo de aplicaciones intuitivas y bien estructuradas. Cuento con conocimientos en desarrollo Full Stack y una visión integral del ciclo de vida del software.</p>
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos" class="container">
+  <h2><i class="fas fa-folder"></i> Proyectos</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fab fa-github"></i> Proyecto 1</h5>
+          <p class="card-text">Descripción breve del proyecto desarrollado o en proceso.</p>
+          <a href="#" class="btn btn-primary">Ver en GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-laptop-code"></i> Proyecto 2</h5>
+          <p class="card-text">Descripción breve del proyecto desarrollado o en proceso.</p>
+          <a href="#" class="btn btn-primary">Ver Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fab fa-github"></i> Proyecto 3</h5>
+          <p class="card-text">Descripción breve del proyecto desarrollado o en proceso.</p>
+          <a href="#" class="btn btn-primary">Ver en GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Habilidades -->
+<section id="habilidades" class="container">
+  <h2><i class="fas fa-tools"></i> Habilidades</h2>
+  <h4><i class="fas fa-globe"></i> Web</h4>
+  <ul class="list-group icon-list">
+    <li class="list-group-item"><i class="fab fa-html5"></i> HTML5, <i class="fab fa-css3-alt"></i> CSS3, <i class="fab fa-js-square"></i> JavaScript, <i class="fab fa-bootstrap"></i> Bootstrap, Tailwind CSS</li>
+  </ul>
+  <h4 class="mt-4"><i class="fas fa-server"></i> Backend</h4>
+  <ul class="list-group icon-list">
+    <li class="list-group-item"><i class="fab fa-java"></i> Java SE, Java EE, Spring Boot</li>
+    <li class="list-group-item"><i class="fas fa-database"></i> MySQL, PostgreSQL, JPA/Hibernate</li>
+  </ul>
+  <h4 class="mt-4"><i class="fas fa-cogs"></i> Otras</h4>
+  <ul class="list-group icon-list">
+    <li class="list-group-item"><i class="fab fa-git-alt"></i> Git, <i class="fab fa-github"></i> GitHub</li>
+    <li class="list-group-item"><i class="fas fa-vial"></i> JUnit, <i class="fas fa-envelope-open-text"></i> Postman, <i class="fas fa-code"></i> VSCode, IntelliJ IDEA</li>
+    <li class="list-group-item"><i class="fas fa-project-diagram"></i> Scrum, UML, Principios SOLID</li>
+  </ul>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="container">
+  <h2><i class="fas fa-envelope"></i> Contacto</h2>
+  <ul>
+    <li>Correo: <a href="mailto:michael.corrales.it.eng@gmail.com">michael.corrales.it.eng@gmail.com</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/michaelcorrales-javafullstack" target="_blank">Michael Corrales</a></li>
+    <li>WhatsApp: <a href="https://wa.me/57313281940" target="_blank">+57 313 281 940</a></li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-3 text-center">
+  &copy; 2024 Michael Corrales. Todos los derechos reservados.
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
