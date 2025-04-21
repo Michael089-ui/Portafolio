@@ -1,117 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio - Michael Corrales</title>
-    <!-- Bootstrap CSS desde CDN alternativo -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <style>
-        body { background-color: #f8f9fa; }
-        section { padding: 60px 0; }
-        section h2 { margin-bottom: 30px; color: #343a40; }
-        footer { margin-top: 60px; }
-        .icon-list li { display: flex; align-items: center; }
-        .icon-list li i { margin-right: 10px; color: #007bff; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Michael Corrales</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#"><i class="fas fa-code"></i> Michael Corrales</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
-        <li class="nav-item"><a class="nav-link" href="#proyectos"><i class="fas fa-folder"></i> Proyectos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#habilidades"><i class="fas fa-tools"></i> Habilidades</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-      </ul>
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Michael Corrales</h1>
+      <nav>
+        <ul class="flex gap-6 text-sm font-medium">
+          <li><a href="#about" class="hover:text-blue-600">Sobre mí</a></li>
+          <li><a href="#skills" class="hover:text-blue-600">Habilidades</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Proyectos</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</nav>
+  </header>
 
-<!-- Sobre mí -->
-<section id="sobre-mi" class="container">
-  <h2><i class="fas fa-user"></i> Sobre mí</h2>
-  <p>Soy un desarrollador enfocado en generar soluciones eficientes y escalables mediante el uso de tecnologías web modernas. Mi objetivo es ayudarte a transformar ideas en productos funcionales, optimizando procesos a través del desarrollo de aplicaciones intuitivas y bien estructuradas. Cuento con conocimientos en desarrollo Full Stack y una visión integral del ciclo de vida del software.</p>
-</section>
+  <!-- Hero -->
+  <section class="bg-blue-500 text-white py-20 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">¡Hola! Soy Michael</h2>
+    <p class="text-lg">Desarrollador Web en formación con pasión por crear soluciones funcionales.</p>
+  </section>
 
-<!-- Proyectos -->
-<section id="proyectos" class="container">
-  <h2><i class="fas fa-folder"></i> Proyectos</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fab fa-github"></i> Proyecto 1</h5>
-          <p class="card-text">Descripción breve del proyecto desarrollado o en proceso.</p>
-          <a href="#" class="btn btn-primary">Ver en GitHub</a>
+  <!-- Sobre mí -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path d="M12 4.354a4.354 4.354 0 110 8.708 4.354 4.354 0 010-8.708zM3.5 20.5a8.5 8.5 0 0117 0" />
+        </svg>
+        Sobre mí
+      </h2>
+      <p class="text-gray-700 leading-relaxed">
+        <p class="text-gray-700 leading-relaxed">
+            Soy desarrollador Java Full Stack en formación, apasionado por la tecnología y la creación de soluciones funcionales. Actualmente me encuentro fortaleciendo mis habilidades a través de estudios universitarios en Ingeniería de Software y un bootcamp intensivo en desarrollo web.  
+            <br><br>
+            Me especializo en construir aplicaciones robustas y eficientes tanto del lado del cliente como del servidor, utilizando herramientas modernas como HTML, CSS, JavaScript y Java con Spring Boot.  
+            <br><br>
+            Mi objetivo es ayudar a empresas y emprendedores a desarrollar soluciones compactas, bien estructuradas y adaptadas a sus necesidades reales. Creo en el código limpio, la mejora continua y en el poder de la tecnología para transformar ideas en productos funcionales.
+          </p>
+          
+      </p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path d="M14.752 11.168l-2.197-2.197a1.25 1.25 0 00-1.768 0L8.59 11.168M12 15v.01" />
+        </svg>
+        Habilidades
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 mx-auto mb-2" />
+          HTML
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 mx-auto mb-2" />
+          CSS
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 mx-auto mb-2" />
+          JavaScript
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-10 mx-auto mb-2" />
+          Git
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fas fa-laptop-code"></i> Proyecto 2</h5>
-          <p class="card-text">Descripción breve del proyecto desarrollado o en proceso.</p>
-          <a href="#" class="btn btn-primary">Ver Demo</a>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <path d="M9.75 6.75h10.5m-10.5 4.5h10.5m-10.5 4.5h10.5m-14.25-9v.008h.008V6.75H6zM5.25 11.25h.008V11.25H5.25zM6 15.75h.008v.008H6z" />
+        </svg>
+        Proyectos
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">ConSentido.co</h3>
+          <p class="text-sm text-gray-600">Plataforma de agendamiento y e-commerce con impacto social, desarrollada con HTML, CSS y JS Vanilla.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">FactuÁgil</h3>
+          <p class="text-sm text-gray-600">Sistema de facturación electrónica para pequeños negocios, cumpliendo con normativa DIAN. Proyecto universitario.</p>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fab fa-github"></i> Proyecto 3</h5>
-          <p class="card-text">Descripción breve del proyecto desarrollado o en proceso.</p>
-          <a href="#" class="btn btn-primary">Ver en GitHub</a>
-        </div>
-      </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-16 bg-blue-500 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">¡Hablemos!</h2>
+      <p class="mb-6">¿Quieres colaborar conmigo o tienes una idea en mente? Contáctame.</p>
+      <a href="mailto:tuemail@gmail.com" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+        Enviar correo
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Habilidades -->
-<section id="habilidades" class="container">
-  <h2><i class="fas fa-tools"></i> Habilidades</h2>
-  <h4><i class="fas fa-globe"></i> Web</h4>
-  <ul class="list-group icon-list">
-    <li class="list-group-item"><i class="fab fa-html5"></i> HTML5, <i class="fab fa-css3-alt"></i> CSS3, <i class="fab fa-js-square"></i> JavaScript, <i class="fab fa-bootstrap"></i> Bootstrap, Tailwind CSS</li>
-  </ul>
-  <h4 class="mt-4"><i class="fas fa-server"></i> Backend</h4>
-  <ul class="list-group icon-list">
-    <li class="list-group-item"><i class="fab fa-java"></i> Java SE, Java EE, Spring Boot</li>
-    <li class="list-group-item"><i class="fas fa-database"></i> MySQL, PostgreSQL, JPA/Hibernate</li>
-  </ul>
-  <h4 class="mt-4"><i class="fas fa-cogs"></i> Otras</h4>
-  <ul class="list-group icon-list">
-    <li class="list-group-item"><i class="fab fa-git-alt"></i> Git, <i class="fab fa-github"></i> GitHub</li>
-    <li class="list-group-item"><i class="fas fa-vial"></i> JUnit, <i class="fas fa-envelope-open-text"></i> Postman, <i class="fas fa-code"></i> VSCode, IntelliJ IDEA</li>
-    <li class="list-group-item"><i class="fas fa-project-diagram"></i> Scrum, UML, Principios SOLID</li>
-  </ul>
-</section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center text-sm">
+    &copy; 2025 Michael Corrales. Todos los derechos reservados.
+  </footer>
 
-<!-- Contacto -->
-<section id="contacto" class="container">
-  <h2><i class="fas fa-envelope"></i> Contacto</h2>
-  <ul>
-    <li>Correo: <a href="mailto:michael.corrales.it.eng@gmail.com">michael.corrales.it.eng@gmail.com</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/michaelcorrales-javafullstack" target="_blank">Michael Corrales</a></li>
-    <li>WhatsApp: <a href="https://wa.me/57313281940" target="_blank">+57 313 281 940</a></li>
-  </ul>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-white py-3 text-center">
-  &copy; 2024 Michael Corrales. Todos los derechos reservados.
-</footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
